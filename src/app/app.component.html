@@ -1,0 +1,19 @@
+<h1>User management system</h1>
+
+<a href="#" (click)="newUser()">New User</a>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-8">
+      <app-users (updateUser) = "updateUser($event)">
+      </app-users>
+    </div>
+
+    <div class="col-4" *ngIf="showForm">
+      <app-user-details [user]="UserSelected">  <!-- LE PARENTESI QUADRE SIGNIFICANO VALORI IN ENTRATA - INIETTANO UN VALORE-->
+      </app-user-details>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+<table class="table table-striped table-dark table-sm">
+  <thead>
+  <caption>{{title}}</caption>
+  <tr>
+    <th> Name</th>
+    <th> Last Name</th>
+    <th> Fiscal Code</th>
+    <th> Email</th>
+    <th> Phone</th>
+    <th> Province</th>
+    <th> Age</th>
+    <th> Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr app-user
+  *ngFor="let usera of users"
+  [user-data] = "usera"
+  (onDeleteUser)="onDeleteUserMetodo($event)"
+  (onSelectUser)="onSelectUserMetodo($event)"
+  > </tr>
+  </tbody>
+
+</table>

@@ -1,0 +1,20 @@
+<td>{{user?.name}}</td>
+<td>{{user?.lastname}}</td>
+<td>{{user?.fiscalcode}}</td>
+<td>{{user?.email}}</td>
+<td>{{user?.phone}}</td>
+<td>{{user?.province}}</td>
+<td>{{user?.age}}</td>
+<td>
+  <div class="row">
+    <div class="col-sm-4"><button class="btn btn-primary btn-sm"
+      (click)="updateUser()">
+      <fa-icon [icon]="faPen"></fa-icon></button>
+    </div>
+    <div class="col-sm-4"> <button class="btn btn-danger btn-sm"
+      (click)="deleteUser()">
+      <fa-icon [icon]="faTra"></fa-icon></button>
+    </div>
+  </div>
+
+</td>
